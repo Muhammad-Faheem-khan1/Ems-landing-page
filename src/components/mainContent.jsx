@@ -101,20 +101,98 @@ function MainContent() {
       </div>
       <div>
         <div className="grid grid-cols-3 px-10">
-        {REVIEWS.map((review)=>(
-          <ReviewCard review={review} key={review?.imgSrc} />
-        ))}
+          {REVIEWS.map((review) => (
+            <ReviewCard review={review} key={review?.imgSrc} />
+          ))}
         </div>
         <div className="w-[30%] mx-auto flex justify-between px-10">
           <button>
-            <img src="/assets/svgs/leftArrow.svg" className="w-[40px] h-[40px]" alt="right arrow"/>
+            <img
+              src="/assets/svgs/leftArrow.svg"
+              className="w-[40px] h-[40px]"
+              alt="right arrow"
+            />
           </button>
           <button>
-            <img src="/assets/svgs/rightArrow.svg" className="w-[40px] h-[40px]" alt="right arrow"/>
+            <img
+              src="/assets/svgs/rightArrow.svg"
+              className="w-[40px] h-[40px]"
+              alt="right arrow"
+            />
           </button>
         </div>
       </div>
-     
+
+      <div className="mt-8">
+        <h3 className="text-center text-2xl font-bold px-10 mt-10 pt-10">
+          Ready to take your Organization to the next level?
+        </h3>
+        <div className="flex items-center justify-center mt-10 mb-10">
+          <button className="rounded-md bg-[#1890FF] text-white py-2 px-3">
+            Book a demo
+          </button>
+          <button className="rounded-md bg-white  py-2 px-3 ml-5">
+            Schedule a Call
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <h3 className="text-center text-2xl font-bold px-10 mt-10 pt-10">
+          Trusted by industry leading companies around the world
+        </h3>
+        <div className="flex md:flex-row flex-col justify-evenly items-center mt-8 mb-10">
+          <img
+            src="/assets/svgs/bonfire-logo.svg"
+            className="w-[170px] h-[60px] mt-4"
+            alt="logo"
+          />
+          <img
+            src="/assets/svgs/copyAI-icon.svg"
+            className="w-[170px] h-[60px] mt-4"
+            alt="logo"
+          />
+          <img
+            src="/assets/svgs/hatch-icon.svg"
+            className="w-[170px] h-[60px] mt-4"
+            alt="logo"
+          />
+          <img
+            src="/assets/svgs/zoom-icon.svg"
+            className="w-[170px] h-[60px] mt-4"
+            alt="logo"
+          />
+          <img
+            src="/assets/svgs/asan-icon.svg"
+            className="w-[170px] h-[60px] mt-4"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div>
+        <div className="grid grid-cols-3 px-10">
+          {REVIEWS.map((review) => (
+            <ReviewCard review={review} key={review?.imgSrc} />
+          ))}
+        </div>
+        <div className="w-[30%] mx-auto flex justify-between px-10">
+          <button>
+            <img
+              src="/assets/svgs/leftArrow.svg"
+              className="w-[40px] h-[40px]"
+              alt="right arrow"
+            />
+          </button>
+          <button>
+            <img
+              src="/assets/svgs/rightArrow.svg"
+              className="w-[40px] h-[40px]"
+              alt="right arrow"
+            />
+          </button>
+        </div>
+      </div>
+
       <div className="mt-8">
         <h3 className="text-center text-2xl font-bold px-10 mt-10 pt-10">
           Ready to take your Organization to the next level?
